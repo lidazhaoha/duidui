@@ -1,5 +1,6 @@
-DOMAIN,speed.dler.io
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,speed.cloudflare.com
-DOMAIN-SUFFIX,www.speedtest.net:443
+DOMAIN-SUFFIX,speed.dler.io
+DOMAIN-KEYWORD,speedtest
+USER-AGENT,SpeedTest*
