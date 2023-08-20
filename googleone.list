@@ -1,3 +1,2 @@
-- DOMAIN-SUFFIX,cloud.cupronickel.goog,one
-- IP-CIDR,34.107.0.0/16,no-resolve,one
- 
+DOMAIN-SUFFIX,cloud.cupronickel.goog
+IP-CIDR,34.107.0.0/16,no-resolve
