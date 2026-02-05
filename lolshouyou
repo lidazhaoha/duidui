@@ -1,0 +1,33 @@
+好的，为你准备了《英雄联盟：激斗峡谷》（League of Legends: Wild Rift）国际服的 Surge 规则集。
+
+为了保证登录顺畅以及匹配对局时的低延迟，这套规则包含了 Riot Games 的核心域名、鉴权服务以及最为关键的 ASN（自治系统号）规则。
+
+📋 Surge 规则集 (可直接复制)
+建议你新建一个名为 LoL_WildRift.list 的文件，或直接将以下内容粘贴到你的配置文件的 [Rule] 字段中。
+
+代码段
+# ========================================
+# 🎮 League of Legends: Wild Rift (International)
+# 🎯 包含登录、大厅、语音及游戏对局流量
+# ========================================
+
+# > 核心域名 (登录、账户、商店)
+DOMAIN-SUFFIX,riotgames.com,🎮 LoL WR
+DOMAIN-SUFFIX,riotcdn.net,🎮 LoL WR
+DOMAIN-SUFFIX,riotgames.io,🎮 LoL WR
+DOMAIN-SUFFIX,pvp.net,🎮 LoL WR
+DOMAIN-SUFFIX,leagueoflegends.com,🎮 LoL WR
+DOMAIN-SUFFIX,wildrift.leagueoflegends.com,🎮 LoL WR
+
+# > 游戏服务与反作弊
+DOMAIN-KEYWORD,wildrift,🎮 LoL WR
+DOMAIN-KEYWORD,riotgames,🎮 LoL WR
+
+# > 游戏对局 IP段 (强烈建议使用 ASN 规则)
+# Riot Games 使用 ASN 6507，这能覆盖绝大多数直连服务器 IP
+IP-ASN,6507,🎮 LoL WR,no-resolve
+
+# > 备用：常见游戏云服务商 IP 段 (若 ASN 不生效可补充)
+# AWS/Google Cloud 经常作为游戏服载体，但通过域名通常已抓取，此处不建议全放行以免误伤。
+# 如果你在 macOS 上玩，可以使用进程匹配：
+# PROCESS-NAME,LeagueofLegends,🎮 LoL WR
