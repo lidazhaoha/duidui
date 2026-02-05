@@ -11,7 +11,9 @@ DOMAIN-SUFFIX,riotgames.io,🎮 LoL WR
 DOMAIN-SUFFIX,pvp.net,🎮 LoL WR
 DOMAIN-SUFFIX,leagueoflegends.com,🎮 LoL WR
 DOMAIN-SUFFIX,wildrift.leagueoflegends.com,🎮 LoL WR
-
+# 抓取 LOL 手游的主程序名称
+PROCESS-NAME,LeagueOfLegends,🎮 LoL WR
+PROCESS-NAME,WildRift,🎮 LoL WR
 # > 游戏服务与反作弊
 DOMAIN-KEYWORD,wildrift,🎮 LoL WR
 DOMAIN-KEYWORD,riotgames,🎮 LoL WR
